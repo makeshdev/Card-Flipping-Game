@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rowdies:wght@300;400;700&family=Saira:ital,wght@0,100..900;1,100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Yuji+Mai&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", serif;
+  background-color: #7c5fa0;
+}
+h1 {
+  color: white;
+  text-align: center;
+  margin: 2rem 0;
+  text-transform: uppercase;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#cards {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 1rem;
+  justify-content: center;
+  width: 800px;
+  margin: 0 auto;
+}
+#cards div {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  border-radius: 12px;
+}
+#cards div:hover {
+  cursor: pointer;
+}
+img {
+  width: 100px;
+}
+.active {
+  background-color: white;
+}
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+}
+.flex div {
+  display: flex;
+  gap: 0.3rem;
+  color: white;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.btn button {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  color: white;
+  background: #594178;
+  border: unset;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+.btn button:hover {
+  background: #6f4c9a;
+}
+.won {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #dabdff;
+  font-weight: bold;
+  font-size: 3rem;
+}
+@media screen and (max-width: 600px) {
+  #cards {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 100%;
+    padding: 1rem;
+  }
+}

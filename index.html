@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Card Flipping Game</h1>
+      <div id="cards" class="cards"></div>
+      <div class="flex">
+        <div>
+          <p>Total Click :</p>
+          <span id="count"></span>
+        </div>
+        <div>
+          <p>Missing Click :</p>
+          <span id="miss"></span>
+        </div>
+      </div>
+      <div class="btn">
+        <button onclick="reload()">Page Restart</button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
